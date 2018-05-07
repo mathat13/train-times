@@ -35,6 +35,7 @@ def trainTimeFinder(html):
 
 #---------------------------------------------
 def stationHelper(station):
+    '''Converts user input into 3 letter station code used in URL.'''
     with open('station_codes.txt', 'r') as txtfile: #Opens the txt file of all stations and station codes in the UK.
         codes = txtfile.read()
         if station in codes:
